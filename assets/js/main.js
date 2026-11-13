@@ -104,6 +104,16 @@ if (newsletterForm) {
   });
 }
 
+/*=============== FORMULAIRE DE CONTACT ===============*/
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    contactForm.reset();
+  });
+}
+
 /*=============== ANNÉE COURANTE DANS LE FOOTER ===============*/
 const yearSpan = document.getElementById('current-year');
 if (yearSpan) {
