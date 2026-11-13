@@ -644,6 +644,32 @@ img {
   text-align: center;
 }
 
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.08);
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.footer__legal-link,
+.footer__credit-link {
+  color: var(--text-color-light);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  transition: color 0.3s;
+}
+
+.footer__legal-link:hover,
+.footer__credit-link:hover {
+  color: var(--title-color);
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -755,6 +781,12 @@ img {
 
   .footer__copy {
     order: -1;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: initial;
   }
 }
 /* For large devices */
@@ -935,6 +967,28 @@ img {
 .page-hero__description {
   max-width: 560px;
   margin-inline: auto;
+}
+
+/*=============== MENTIONS LÉGALES ===============*/
+.legal__container {
+  max-width: 760px;
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.legal__block h2 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.legal__block p {
+  line-height: 1.6;
+}
+
+.legal__block a {
+  color: var(--title-color);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }
 
 /*=============== TESTIMONIALS ===============*/

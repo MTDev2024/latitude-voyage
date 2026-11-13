@@ -47,7 +47,7 @@ if (!destination) {
       </div>
     </section>`;
 } else {
-  document.title = `${destination.nom} — Latitude`;
+  document.title = `${destination.nom} - Latitude`;
 
   content.innerHTML = `
     <section class="detail-hero">

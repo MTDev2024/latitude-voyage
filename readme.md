@@ -1,4 +1,4 @@
-# Latitude — Agence de voyage (projet portfolio)
+# Latitude - Agence de voyage (projet portfolio)
 
 Site vitrine fictif pour une agence de voyage, en français, avec un
 catalogue de destinations filtrable et des fiches détaillées générées
@@ -10,15 +10,16 @@ portfolio plus aboutie.
 
 ## Pages
 
-- `index.html` — Accueil : hero, présentation, destinations phares,
-  témoignages, newsletter (démo).
-- `destinations.html` — Catalogue complet avec filtres par ambiance
+- `index.html` : Accueil, avec hero, présentation, destinations phares,
+  témoignages et newsletter (démo).
+- `destinations.html` : Catalogue complet avec filtres par ambiance
   (plage, montagne, nature, île) et recherche par nom/pays.
-- `destination.html?id=...` — Fiche détaillée générée dynamiquement à
+- `destination.html?id=...` : Fiche détaillée générée dynamiquement à
   partir de `assets/js/data.js` (description, durée, budget, saison,
   destinations similaires).
-- `contact.html` — Formulaire de contact (démonstration front-end
-  uniquement, aucun envoi réel).
+- `contact.html` : Formulaire de contact, démonstration front-end
+  uniquement, aucun envoi réel.
+- `mentions-legales.html` : Mentions légales du site.
 
 ## Stack
 
