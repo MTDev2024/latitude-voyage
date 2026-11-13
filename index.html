@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Latitude, agence de voyage en ligne : explorez nos destinations coup de cœur, de la montagne aux plages tropicales."
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Latitude — Voyagez autrement</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Latitude</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Accueil</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">À propos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="destinations.html" class="nav__link">Destinations</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!--close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+      <section class="home section" id="home">
+        <img src="assets/img/home-bg.jpg" alt="Paysage de voyage" class="home__bg" />
+        <div class="home__shadow"></div>
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__subtitle">Bienvenue sur Latitude</h3>
+
+            <h1 class="home__title">
+              Explorez <br />
+              le monde
+            </h1>
+
+            <p class="home__description">
+              Vivez des voyages qui marquent, découvrez des paradis, des îles,
+              des montagnes et bien plus encore. Composez votre prochaine
+              aventure dès aujourd'hui.
+            </p>
+
+            <a href="destinations.html" class="button"
+              >Commencer l'aventure <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home__cards grid">
+            <article class="home__card">
+              <img
+                src="assets/img/home-trees.jpg"
+                alt="Lacs de Plitvice, Croatie"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Croatie</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+            <article class="home__card">
+              <img
+                src="assets/img/home-lake.jpg"
+                alt="Lagune de Jökulsárlón, Islande"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Islande</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+            <article class="home__card">
+              <img
+                src="assets/img/home-mountain.jpg"
+                alt="Les Dolomites, Italie"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Italie</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+            <article class="home__card">
+              <img
+                src="assets/img/home-beach.jpg"
+                alt="Costa Brava, Espagne"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Espagne</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              En savoir plus <br />
+              sur Latitude
+            </h2>
+
+            <p class="about__description">
+              Chez Latitude, chaque voyage est pensé pour vous offrir le juste
+              équilibre entre découverte et sérénité. Nous sélectionnons des
+              destinations authentiques et vous accompagnons à chaque étape,
+              du premier itinéraire jusqu'au retour.
+            </p>
+
+            <a href="destinations.html" class="button">
+              Explorer les destinations <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="about__image">
+            <img
+              src="assets/img/about-beach.jpg"
+              alt="Plage de Santorin, Grèce"
+              class="about__img"
+            />
+            <div class="about__shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular section" id="popular">
+        <h2 class="section__title">
+          Les plus belles merveilles <br />
+          du monde
+        </h2>
+
+        <div class="popular__container container grid" id="popular-container">
+          <!-- Les 3 destinations phares sont générées par assets/js/home.js -->
+        </div>
+      </section>
+
+      <section class="explore section" id="explore">
+        <div class="explore__container">
+          <div class="explore__image">
+            <img
+              src="assets/img/explore-beach.jpg"
+              alt="Baie de Phuket, Thaïlande"
+              class="explore__img"
+            />
+            <div class="explore__shadow"></div>
+          </div>
+
+          <div class="explore__content container grid">
+            <div class="explore__data">
+              <h2 class="section__title">
+                Explorez les plus <br />
+                beaux paradis
+              </h2>
+              <p class="explore__description">
+                Explorer des paradis comme des îles et des vallées en
+                voyageant à travers le monde est l'une des plus belles
+                expériences qui soient. Cela offre harmonie et sérénité, pour
+                un confort absolu.
+              </p>
+            </div>
+            <div class="explore__user">
+              <img
+                src="assets/img/explore-perfil.png"
+                alt="Portrait d'une voyageuse"
+                class="explore__perfil"
+              />
+              <span class="explore__name">Camille Lefèvre</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <h2 class="section__title">
+          Ils ont voyagé <br />
+          avec nous
+        </h2>
+
+        <div class="testimonials__container container grid">
+          <article class="testimonial__card">
+            <div class="testimonial__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i>
+            </div>
+            <p class="testimonial__text">
+              "Un voyage organisé dans les moindres détails. L'équipe Latitude
+              a su nous conseiller la bonne période pour l'Islande, sans
+              surprise à l'arrivée."
+            </p>
+            <span class="testimonial__name">Thomas Girard</span>
+          </article>
+
+          <article class="testimonial__card">
+            <div class="testimonial__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i>
+            </div>
+            <p class="testimonial__text">
+              "La Costa Brava recommandée par Latitude était exactement ce
+              qu'on cherchait : des criques tranquilles, loin des foules
+              touristiques."
+            </p>
+            <span class="testimonial__name">Léa Moreau</span>
+          </article>
+
+          <article class="testimonial__card">
+            <div class="testimonial__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-line"></i>
+            </div>
+            <p class="testimonial__text">
+              "Bora Bora était un rêve. La fiche destination très détaillée
+              nous a permis de bien préparer notre budget avant de partir."
+            </p>
+            <span class="testimonial__name">Nicolas Fabre</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="join section">
+        <div class="join__container container grid">
+          <div class="join__data">
+            <h2 class="section__title">
+              Votre voyage <br />
+              commence ici
+            </h2>
+            <p class="join__description">
+              Restez informé·e de nos dernières destinations et de nos offres
+              exclusives.
+            </p>
+
+            <form action="" class="join__form" id="newsletter-form">
+              <input
+                type="email"
+                placeholder="Votre adresse e-mail"
+                class="join__input"
+                required
+              />
+
+              <button class="join__button button" type="submit">
+                S'inscrire à la newsletter
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="join__image">
+            <img
+              src="assets/img/join-island.jpg"
+              alt="Île de Bora Bora, Polynésie française"
+              class="join__img"
+            />
+            <div class="join__shadow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="index.html" class="footer__logo">Latitude</a>
+
+            <p class="footer__description">
+              Voyagez avec nous et explorez <br />
+              le monde sans limites.
+            </p>
+          </div>
+
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">À propos</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="index.html#about" class="footer__link">Qui sommes-nous</a>
+                </li>
+
+                <li>
+                  <a href="destinations.html" class="footer__link">Destinations</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Actualités &amp; Blog</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Entreprise</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Questions fréquentes</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Notre histoire</a>
+                </li>
+
+                <li>
+                  <a href="index.html#testimonials" class="footer__link">Avis clients</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Contact</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="contact.html" class="footer__link">Centre d'appel</a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="footer__link">Support client</a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="footer__link">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Assistance</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Politique de confidentialité</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Conditions d'utilisation</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Paiements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__group">
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-facebook-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-twitter-line"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+
+          <span class="footer__copy">
+            &#169; Latitude — Projet de portfolio, tous droits réservés
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!--Scroll Up-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/data.js"></script>
+    <!--Scroll Reveal-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

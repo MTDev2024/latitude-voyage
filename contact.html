@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactez l'équipe Latitude pour organiser votre prochain voyage."
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Contact — Latitude</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header blur-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Latitude</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Accueil</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">À propos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="destinations.html" class="nav__link">Destinations</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-hero__title">Contactez-nous</h1>
+          <p class="page-hero__description">
+            Une question, un projet de voyage sur mesure ? Notre équipe vous
+            répond rapidement.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact section">
+        <div class="contact__container container grid">
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="ri-map-pin-2-line"></i>
+              <div>
+                <h3>Adresse</h3>
+                <p>12 rue des Voyageurs, 75010 Paris</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <i class="ri-phone-line"></i>
+              <div>
+                <h3>Téléphone</h3>
+                <p>+33 1 23 45 67 89</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <i class="ri-mail-line"></i>
+              <div>
+                <h3>E-mail</h3>
+                <p>contact@latitude-voyages.fr</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" required />
+            </div>
+
+            <div class="contact__group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="contact__group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required></textarea>
+            </div>
+
+            <button class="button contact__submit" type="submit">
+              Envoyer le message <i class="ri-arrow-right-line"></i>
+            </button>
+
+            <p class="contact__success" id="contact-success" hidden>
+              <i class="ri-checkbox-circle-line"></i> Merci, votre message a
+              bien été envoyé ! (démonstration — aucun message n'est
+              réellement transmis)
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="index.html" class="footer__logo">Latitude</a>
+            <p class="footer__description">
+              Voyagez avec nous et explorez <br />
+              le monde sans limites.
+            </p>
+          </div>
+        </div>
+        <div class="footer__group">
+          <span class="footer__copy">
+            &#169; Latitude — Projet de portfolio, tous droits réservés
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

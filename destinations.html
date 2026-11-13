@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Toutes les destinations Latitude : filtrez par ambiance (plage, montagne, nature, île) et trouvez votre prochain voyage."
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Destinations — Latitude</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header blur-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Latitude</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Accueil</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">À propos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="destinations.html" class="nav__link">Destinations</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-hero__title">Nos destinations</h1>
+          <p class="page-hero__description">
+            Dix coups de cœur, du lagon tropical aux sommets alpins. Filtrez
+            par ambiance ou recherchez un pays pour composer votre prochain
+            voyage.
+          </p>
+        </div>
+      </section>
+
+      <section class="catalog section">
+        <div class="container">
+          <div class="catalog__toolbar">
+            <div class="catalog__filters" id="filters">
+              <button class="filter__btn active-filter" data-filter="tous">
+                Tous
+              </button>
+              <button class="filter__btn" data-filter="plage">Plage</button>
+              <button class="filter__btn" data-filter="montagne">
+                Montagne
+              </button>
+              <button class="filter__btn" data-filter="nature">Nature</button>
+              <button class="filter__btn" data-filter="ile">Île</button>
+            </div>
+
+            <div class="catalog__search">
+              <i class="ri-search-line"></i>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Rechercher un pays ou une destination..."
+              />
+            </div>
+          </div>
+
+          <p class="catalog__count" id="results-count"></p>
+
+          <div class="catalog__grid grid" id="destinations-grid">
+            <!-- Généré par assets/js/destinations.js -->
+          </div>
+
+          <p class="catalog__empty" id="empty-message" hidden>
+            Aucune destination ne correspond à votre recherche.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="index.html" class="footer__logo">Latitude</a>
+            <p class="footer__description">
+              Voyagez avec nous et explorez <br />
+              le monde sans limites.
+            </p>
+          </div>
+        </div>
+        <div class="footer__group">
+          <span class="footer__copy">
+            &#169; Latitude — Projet de portfolio, tous droits réservés
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/destinations.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
